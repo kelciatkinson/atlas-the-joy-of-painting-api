@@ -1,12 +1,12 @@
 # atlas-the-joy-of-painting-api
 
-# Bob Ross Episodes API
+## Bob Ross Episodes API
 
-A database and API that houses data about Bob Ross's "The Joy of Painting" episodes, allowing viewers to filter episodes by broadcast month, subject matter, and color palette.
+A database that houses data about Bob Ross's "The Joy of Painting" episodes, allowing viewers to filter episodes by broadcast month, subject matter, and color palette.
 
 ## Project Overview
 
-This project implements an ETL (Extract, Transform, Load) process to import data from various sources into a structured MySQL database. The goal is to provide an API that allows users to filter Bob Ross's painting episodes based on various criteria.
+This project implements an ETL (Extract, Transform, Load) process to import data from various sources into a structured MySQL database. In the future thegoal is to provide an API that allows users to filter Bob Ross's painting episodes based on various criteria.
 
 ### Features
 
