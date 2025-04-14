@@ -64,24 +64,24 @@ python run_etl.py
 
 ## Sample Queries
 
-Find episodes by month:
-sql
-SELECT episode_id, title, season, episode 
-FROM episode 
+Find episodes by month:\
+sql\
+SELECT episode_id, title, season, episode\
+FROM episode\
 WHERE month = 'January';
 
-Find episodes with mountains:
-sql
-SELECT e.episode_id, e.title 
-FROM episode e
-JOIN episode_subject es ON e.episode_id = es.episode_id
-JOIN subject s ON es.subject_id = s.subject_id
+Find episodes with mountains:\
+sql\
+SELECT e.episode_id, e.title\
+FROM episode e\
+JOIN episode_subject es ON e.episode_id = es.episode_id\
+JOIN subject s ON es.subject_id = s.subject_id\
 WHERE s.subject_name = 'MOUNTAINS';
 
-Find episodes using Phthalo Blue:
-sql
-SELECT e.episode_id, e.title
-FROM episode e
-JOIN episode_color ec ON e.episode_id = ec.episode_id
-JOIN color c ON ec.color_id = c.color_id
+Find episodes using Phthalo Blue:\
+sql\
+SELECT e.episode_id, e.title\
+FROM episode e\
+JOIN episode_color ec ON e.episode_id = ec.episode_id\
+JOIN color c ON ec.color_id = c.color_id\
 WHERE c.color_name = 'Phthalo Blue';
