@@ -43,7 +43,7 @@ Required Python packages: mysql-connector-python\
 Clone this repository
 
 git clone https://github.com/kelciatkinson/atlas-the-joy-of-painting-api
-cd bob-ross-episodes-api
+cd atlas-the-joy-of-painting-api
 
 Set up the database
 
