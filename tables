@@ -1,0 +1,123 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+// https://dbdiagram.io/d
+// app.diagram.net
+
+Table date {
+  title string [primary key]
+  episode_date date
+}
+
+Table date_color {
+  title string [foreign key]
+  painting_title string [foreign key]
+  colors list
+}
+
+Table color {
+  painting_index integer
+  img_src string
+  painting_title string [primary key]
+  season integer
+  episode integer
+  num_colors integer
+  youtube_src string
+  colors list
+  color_hex list
+  Black_Gesso boolean
+  Bright_Red boolean
+  Burnt_Umber boolean
+  Cadmium_Yellow boolean
+  Dark_Sienna boolean
+  Indian_Red boolean
+  Indian_Yellow boolean
+  Liquid_Black boolean
+  Liquid_Clear boolean
+  Midnight_Black boolean
+  Phthalo_Blue boolean
+  Phthalo_Green boolean
+  Prussian_Blue boolean
+  Sap_Green boolean
+  Titanium_White boolean
+  Van_Dyke_Brown boolean
+  Yellow_Ochre boolean
+  Alizarin_Crimson boolean
+}
+
+Table color_subject {
+  painting_title [foreign key]
+  subjects list
+  colors list
+}
+
+Table subject {
+  episode integer
+  title string [primary key]
+  apple_frame boolean
+  aurora_borealis boolean
+  barn boolean
+  beach boolean
+  boat boolean
+  bridge boolean
+  building boolean
+  bushes boolean
+  cabin boolean
+  cactus boolean
+  circle_frame boolean
+  cirrus boolean
+  cliff boolean
+  clouds boolean
+  conifer boolean
+  cumulus boolean
+  decidous boolean
+  diane_andre boolean
+  dock boolean
+  double_oval_frame boolean
+  farm boolean
+  fence boolean
+  fire boolean
+  florida_frane boolean
+  flowers boolean
+  fog boolean
+  framed boolean
+  grass boolean
+  guest boolean
+  half_circle_frame boolean
+  half_oval_frame boolean
+  hills boolean
+  lake boolean
+  lakes boolean
+  lighthouse boolean
+  mill boolean
+  moon boolean
+  mountain boolean
+  mountains boolean
+  night boolean
+  ocean boolean
+  oval_frame boolean
+  palm_trees boolean
+  path boolean
+  person boolean
+  portrait boolean
+  rectangle_3d_frame boolean
+  rectangle_frame boolean
+  river boolean
+  rocks boolean
+  seashell_frame boolean
+  snow boolean
+  snowy_mountain boolean
+  split_frame boolean
+  streve_ross boolean
+  structure boolean
+  sun boolean
+  tomb_frame boolean
+  tree boolean
+  trees boolean
+  triple_frame boolean
+  waterfall boolean
+  waves boolean
+  windmill boolean
+  window_frame boolean
+  winter boolean
+  wood_framed boolean
+}
