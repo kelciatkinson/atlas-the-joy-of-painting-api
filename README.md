@@ -7,6 +7,7 @@ A database that houses data about Bob Ross's "The Joy of Painting" episodes, all
 ## Project Overview
 
 This project implements an ETL (Extract, Transform, Load) process to import data from various sources into a structured MySQL database. In the future thegoal is to provide an API that allows users to filter Bob Ross's painting episodes based on various criteria.
+The biggest challenge I faced was parsing the inconsistent formatting in the source data, especially with color names and subject descriptions that weren't standardized. One particularly difficult hurdle was handling the many-to-many relationships between episodes, subjects, and colors. Initially, I tried to use a simpler schema but found that it limited the query capabilities. Refactoring to a more normalized database design ultimately made the queries more efficient and flexible.
 
 ### Features
 
