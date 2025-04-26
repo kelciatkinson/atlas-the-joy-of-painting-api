@@ -85,3 +85,7 @@ FROM episode e\
 JOIN episode_color ec ON e.episode_id = ec.episode_id\
 JOIN color c ON ec.color_id = c.color_id\
 WHERE c.color_name = 'Phthalo Blue';
+
+## Authors
+Kelci Atkinson <kelci.atkinson@atlasschool.com>
+This porject helped me learn  all about the ETL process, if you'd like to connect with me about it please email or add me on LinkedIn! www.linkedin.com/in/kelciatkinson
